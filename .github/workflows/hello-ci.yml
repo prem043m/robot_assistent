@@ -7,5 +7,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Setup Python
+        run: python3 --version
+        
       - name: Run Python Tests
         run: python3 test_calc.py
